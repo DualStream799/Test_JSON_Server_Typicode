@@ -1,0 +1,156 @@
+{
+  "notifications": [
+    {
+      "id": "9804c6a7-ae74-436b-83e1-223832c1ddc3",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "81234",
+      "eventName": "FailedDelivery",
+      "eventDescription": "Insucesso na entrega",
+      "detailedDescription": "Local fechado",
+      "trackingCode": "BZ140958019U",
+      "stopNumber": 4,
+      "address": {
+        "address": "Rua Silvano de Almeida, 102",
+        "postalCode": "02723110",
+        "neighborhood": "Vila Siqueira",
+        "city": "São Paulo",
+        "state": "SP"
+      }
+    },
+    {
+      "id": "9e6cefa1-9045-423e-bd0f-c9ea44cad8c8",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "84132",
+      "eventName": "SuccessfulDelivery",
+      "eventDescription": "Entregue com sucesso",
+      "trackingCode": "BT244891S",
+      "stopNumber": 8,
+      "address": {
+        "address": "Rua Saburo Sumiya, 83",
+        "postalCode": "06440110",
+        "neighborhood": "Aldeia",
+        "city": "Barueri",
+        "state": "SP"
+      }
+    },
+    {
+      "id": "75cc9ded-fe7f-49d5-8c7e-f54c1a2c556d",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "81423",
+      "eventName": "DriverLateForLoading",
+      "eventDescription": "Motorista atrasado para o carregamento"
+    },
+    {
+      "id": "d099ef69-3f6d-47e3-be40-74234e4f6c7d\n",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "81423",
+      "eventName": "DriverAssigned",
+      "eventDescription": "Motorista alocado",
+      "driver": {
+        "name": "Fabrício José Coelho",
+        "vehiclePlate": "DKS3F44"
+      }
+    },
+    {
+      "id": "0de25bb6-8111-4f24-a1ec-79e0836a1463",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "83421",
+      "eventName": "OrderFinished",
+      "eventDescription": "Ordem de serviço finalizada"
+    },
+    {
+      "id": "fc11811d-4093-403c-9def-add234b2ab0d",
+      "eventOccurredAt": "2020-06-11T09:43:11-03:00",
+      "orderId": "84823",
+      "eventName": "OrderCanceled",
+      "eventDescription": "Ordem de serviço cancelada"
+    }
+  ],
+  "orders": [
+    {
+      "id": "81234",
+      "vehicleType": "Utilitário pequeno (Fiorino)",
+      "status": "AssigningDriver",
+      "stops": [
+        {
+          "id": "2345789",
+          "type": "Pickup",
+          "address": {
+            "street": "Alameda Rio Claro",
+            "number": "183",
+            "complement": "apto 44",
+            "neighborhood": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP",
+            "postalCode": "01524000"
+          },
+          "status": "Pending"
+        },
+        {
+          "id": "2345789",
+          "type": "Delivery",
+          "address": {
+            "street": "Alameda Rio Claro",
+            "number": "183",
+            "complement": "apto 44",
+            "neighborhood": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP",
+            "postalCode": "01524000"
+          },
+          "trackingCodes": [
+            "R1070249",
+            "R1070255"
+          ],
+          "status": "Pending"
+        }
+      ]
+    },
+    {
+      "id": "84132",
+      "vehicleType": "VUC pequeno (HR)",
+      "status": "InProgress",
+      "stops": [
+        {
+          "id": "2345789",
+          "type": "Pickup",
+          "address": {
+            "street": "Alameda Rio Claro",
+            "number": "183",
+            "complement": "apto 44",
+            "neighborhood": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP",
+            "postalCode": "01524000"
+          },
+          "status": "Done",
+          "statusTimestamp": "2020-07-01T10:33:09-03:00",
+          "events": [
+            {
+              "type": "PickedUp",
+              "timestamp": "2020-07-01T10:33:09-03:00"
+            }
+          ]
+        },
+        {
+          "id": "2345789",
+          "type": "Delivery",
+          "address": {
+            "street": "Alameda Rio Claro",
+            "number": "183",
+            "complement": "apto 44",
+            "neighborhood": "Bela Vista",
+            "city": "São Paulo",
+            "state": "SP",
+            "postalCode": "01524000"
+          },
+          "trackingCodes": [
+            "R1070249",
+            "R1070255"
+          ],
+          "status": "Pending"
+        }
+      ]
+    }
+  ]
+}
